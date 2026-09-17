@@ -26,11 +26,12 @@ export default function RootLayout({
         <NotificationProvider>
           <Web3Provider>
             <BountyProvider>
-              <div className="flex min-h-screen flex-col">
+              <div className="flex min-h-screen flex-col pb-24 md:pb-0">
                 <Navbar />
-                <main className="flex-1 pb-16 md:pb-0">{children}</main>
+                <main className="flex-1">{children}</main>
                 <Footer />
               </div>
+              <MobileNav />
               <WalletModal />
               <NetworkSelectorModal />
               <NotificationDrawer />
